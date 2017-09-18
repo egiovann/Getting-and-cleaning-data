@@ -133,5 +133,12 @@ for (i in 1:180){
   if (tidy_data$"Activity"[i] == "6") {tidy_data$"Activity"[i] <-  "LAYING"}
 }
 
+
 #-------------------------------------------------------
 #-------------------------------------------------------
+#Write the result in "tidy_dataset.txt" file in the working directory
+write.table(tidy_data,file=paste(dir,"tidy_dataset.txt",sep=""),row.names=FALSE)
+
+#-------------------------------------------------------
+#END
+#-------------------------------------------------------        
